@@ -18,7 +18,7 @@ var gameReset = function () {
     var arrayCrystalImages = [
         "./assets/images/blueCrystal.png",
         "./assets/images/diamondCrystal.png",
-        "./assets/images/lilacCrystal.png",
+        "./assets/images/greenCrystal.png",
         "./assets/images/rubyCrystal.png",
     ];
    
