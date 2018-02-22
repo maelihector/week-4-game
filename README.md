@@ -5,7 +5,7 @@
 ### What is this?
 
 This Crystal Collector Game is a project that I built as one of 
-The UT Coding Boot Camp assignments, and is meant to demonstrate basic knowledge of jQuery by employing some if its uses.
+The UT Coding Boot Camp assignments, and is meant to demonstrate basic knowledge of jQuery by employing some of its uses.
 
 #### Credits
 
