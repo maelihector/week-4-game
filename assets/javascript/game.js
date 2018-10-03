@@ -54,7 +54,7 @@ var gameReset = function () {
         $(".crystals").append(crystal);
 
     }
-    // Grabs the id #yourNumber and assigns it the yourNumber variable
+    // Grabs the id=yourNumber and assigns it the yourNumber variable
     $("#yourNumber").html(yourNumber);
 }
 
@@ -70,6 +70,7 @@ $(document).on('click', ".crystal", function() {
     // Updates the yourNumber variable with every crystal click by adding the number to the variable
     yourNumber += num;
    
+    // Grabs the id=yourNumber and assigns it the yourNumber variable for user to see as it updates with every click
     $("#yourNumber").html(yourNumber);
 
     if(yourNumber > randomNumber){
