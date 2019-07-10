@@ -1,78 +1,78 @@
 * {
-    box-sizing: border-box;
-    
-}
-body {
-    background-image: url("../images/pow-star.png");
+  box-sizing: border-box;
+
 }
 
-h1, h2 {
-    line-height: 1.7;
-    text-align: center;
-    font-family: fantasy;
-    font-weight: bolder;
-    font-size: 38px;
-    background-color: rgba(24, 24, 238, 0.445);
-    padding: 20px;
-    color: #fff;
+body {
+  background-image: url("../images/pow-star.png");
+}
+
+h1,
+h2 {
+  line-height: 1.7;
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 38px;
+  background-color: rgba(24, 24, 238, 0.445);
+  padding: 20px;
+  color: #fff;
 }
 
 h2 {
-    font-size: 20px;
-    background-color: rgba(255, 0, 0, 0.219);
+  font-size: 20px;
+  background-color: rgba(255, 0, 0, 0.219);
 
 }
 
 h3 {
-    font-size: 18px;
-    background-color: rgba(137, 43, 226, 0.384);
-    padding: 8px;
-    width: 100%;
-    
-    margin-bottom: 10px;
-    color: #fff;
+  font-size: 18px;
+  background-color: rgba(137, 43, 226, 0.384);
+  padding: 8px;
+  width: 100%;
+
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 p {
-    line-height: 1.7;
-    text-align: center;
-    font-family: fantasy;
-    font-weight: 150;
+  line-height: 1.7;
+  text-align: center;
+  font-family: fantasy;
+  font-weight: 150;
 }
 
 span {
-    color: rgba(128, 0, 128, 0.507);
-    font-weight: bold;
+  color: rgba(128, 0, 128, 0.507);
+  font-weight: bold;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-    font-family: fantasy;
-    background-color: rgba(255, 255, 255, 0.63);
-    padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: fantasy;
+  background-color: rgba(255, 255, 255, 0.63);
+  padding: 20px;
 }
 
 .crystals {
-    clear: both;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
 .crystal {
-    width: 150px;
-    height: 150px;
-    
+  width: 150px;
+  height: 150px;
+
 
 }
 
 .crystal:hover {
-    cursor: pointer;
-    transform: translate(10px);
-    
-    
+  cursor: pointer;
+  transform: translate(10px);
+
+
 }
-
-
