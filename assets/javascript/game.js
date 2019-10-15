@@ -17,7 +17,7 @@ $(document).ready(function () {
       "./assets/images/blueCrystal.png",
       "./assets/images/diamondCrystal.png",
       "./assets/images/greenCrystal.png",
-      "./assets/images/rubyCrystal.png",
+      "./assets/images/rubyCrystal.png"
     ];
 
     // Empty last game's crystals to re-populate with new random numbers and images
@@ -43,7 +43,7 @@ $(document).ready(function () {
       // Add a cyrstal image to <div>
       crystal.css({
         "background-image": "url('" + arrayCrystalImages[i] + "')",
-        "background-size": "100% 100%",
+        "background-size": "100% 100%"
       });
 
       // Append crystals to DOM
@@ -52,7 +52,7 @@ $(document).ready(function () {
     }
     // Show player their starting number (0)
     $("#playerNumber").html(playerNumber);
-  }
+  };
 
 
   gameReset();
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     // Grab the crystal's number value and place in `num` variable
     // The `data-randomNumber` attribute value is a string because it's coming from the DOM, therefor we have to convert it to an integer first 
-    var num = parseInt($(this).attr('data-randomNumber'));
+    var num = parseInt($(this).attr('data-randomNumber'), 10);
 
     // Add the crystal's number value to player's number
     playerNumber += num;
@@ -72,19 +72,19 @@ $(document).ready(function () {
 
     // If player's number is greater than the target game number, increase losses by 1
     if (playerNumber > randomNumber) {
-      losses++
+      losses++;
       $("#losses").html(losses);
       // reset player's number
       playerNumber = 0;
-      alert("Sorry, you lost! Try again.")
+      alert("Sorry, you lost! Try again.");
       gameReset();
       // Else if player's number equals target game number, increase wins by 1
     } else if (playerNumber === randomNumber) {
-      wins++
+      wins++;
       $("#wins").html(wins);
       // reset player's number
       playerNumber = 0;
-      alert("You won this one!")
+      alert("You won this one!");
       gameReset();
     }
 
