@@ -72,22 +72,26 @@ $(document).ready(function () {
 
     // If player's number is greater than the target game number, increase losses by 1
     if (playerNumber > randomNumber) {
+      setTimeout(function () {
+        // reset player's number
+        playerNumber = 0;
+        alert("Sorry, you lost! Try again.");
+        gameReset();
+      }, 100);
       losses++;
       $("#losses").html(losses);
-      // reset player's number
-      playerNumber = 0;
-      alert("Sorry, you lost! Try again.");
-      gameReset();
       // Else if player's number equals target game number, increase wins by 1
     } else if (playerNumber === randomNumber) {
+      setTimeout(function () {
+        // reset player's number
+        playerNumber = 0;
+        alert("You won this one!");
+        gameReset();
+      }, 100);
       wins++;
       $("#wins").html(wins);
-      // reset player's number
-      playerNumber = 0;
-      alert("You won this one!");
-      gameReset();
     }
 
   });
-  
+
 });
